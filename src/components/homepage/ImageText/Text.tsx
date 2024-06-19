@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@mui/material/Button";
+import { Grid } from "@mui/material";
 import { useLocation, Link } from "react-router-dom";
 import { ButtonContainer } from "../../homepage/insights/Insights.styled";
 import { FadeInAnimation } from "../../animations/animations";
@@ -38,7 +39,7 @@ const Text: React.FC<TextProps> = ({
       </FadeInAnimation>
       <FadeInAnimation $delay="0.1s">
         <TextStyled
-          style={{ maxWidth: 800, margin: subtitle === "" ? 0 : undefined }}
+          style={{ maxWidth: 800, padding: subtitle === "" ? 0 : undefined }}
         >
           {showIcons && isContactPage && (
             <FontAwesomeIcon style={{ marginRight: 10 }} icon={faEnvelope} />
@@ -55,7 +56,7 @@ const Text: React.FC<TextProps> = ({
         </TextStyled>
       </FadeInAnimation>
       <FadeInAnimation $delay="0.3s">
-        <TextStyled style={{ maxWidth: 800, marginBottom: 0 }}>
+        <TextStyled style={{ maxWidth: 800, paddingBottom: 0 }}>
           {showIcons && isContactPage && (
             <FontAwesomeIcon
               style={{ marginRight: 15 }}
