@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "@mui/material/Button";
-import { Grid } from "@mui/material";
 import { useLocation, Link } from "react-router-dom";
 import { ButtonContainer } from "../../homepage/insights/Insights.styled";
 import { FadeInAnimation } from "../../animations/animations";
