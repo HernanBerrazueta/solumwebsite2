@@ -17,7 +17,6 @@ interface GlobalStylesProps {
 const imageMap: { [key: string]: string } = {
   "/": homeImage,
   "/about": aboutImage,
-  "/contact": aboutImage,
   "/privacy_policy": aboutImage,
   "/data_protection": aboutImage,
   "/cookies": aboutImage,
@@ -53,7 +52,7 @@ const GlobalStyles = createGlobalStyle<GlobalStylesProps>`
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    background-position: top center;
+    background-position: top 130px center;
   }
 
   h1, h2, h3, h4, h5, h6, p {

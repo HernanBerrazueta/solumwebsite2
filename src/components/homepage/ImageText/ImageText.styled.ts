@@ -18,9 +18,28 @@ export const Container = styled.div`
   }
 
   & > :last-child {
-    margin-right: 30px;
     @media ${device.mobileOnly} {
-      padding-top: 40px;
+      padding: 40px 0 20px;
+    }
+
+    @media ${device.tablet} {
+      padding: 0 50px;
+    }
+
+    @media ${device.smallTablet} {
+      padding: 0 20px;
+    }
+
+    @media ${device.tablet} {
+      padding: 0 50px;
+    }
+
+    @media ${device.desktop} {
+      padding: 0 60px;
+    }
+
+    @media ${device.ultraLarge} {
+      padding: 0 190px;
     }
   }
 
@@ -67,20 +86,16 @@ export const TextColumn = styled.div`
 `;
 
 export const FlexWrap = styled.div`
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   z-index: 1;
-
-  @media ${device.mobileOnly} {
-    margin-bottom: 40px;
-  }
 `;
 
 export const TitleStyled = styled.h1`
-  font-family: "CircularXXWeb-Bold", sans-serif;
+  font-family: "CircularXXWeb-Medium", sans-serif;
   display: inline-block;
   font-size: 32px;
   text-align: left !important;
